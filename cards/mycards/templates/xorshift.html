@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% block content %}
+    <div>
+    <center>
+        <h2> Generating random numbers account to the number of iteration passed </h2> <br><br>
+        <form method = 'POST'> {% csrf_token %}
+            {{ data.as_p}}<br>
+            <button onclick=“location.href='{% url 'scripts' %}'“>Xorshift Script</button> <br>
+        </form>
+        <br>
+        {% if lists|length == '0' %}
+            <p> No number generated</p>
+        {% else %}
+            <ul>
+                {% for i in lists %}
+                <li>{{ i }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+    </center>
+    </div>
+{% endblock %}
