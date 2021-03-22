@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 asgiref==3.3.1
 Django==3.1.7
 django-crispy-forms==1.11.1
