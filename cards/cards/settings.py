@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'tc2cm&nlzmw&9xd&gt9b469j8!zz0$sf&6dryw)##o5cow1_$f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['xorshift-generator.herokuapp.com', '127.0.0.1']
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
